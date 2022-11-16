@@ -42,4 +42,13 @@
     display: flex;
     flex-direction: row;
     gap: 16px;
+    border-right: 1px solid black;
+    padding-right: 25px;
+}
+.fafafa {
+    display: flex;
+    margin-top: 7px;
+}
+.bars {
+    margin-left: 25px;
 }
