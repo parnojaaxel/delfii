@@ -4,51 +4,213 @@
     box-sizing: border-box;
 }
 
-.container, img {
+:root {
+    --black: #212529;
+    --font-family-system: Inter,sans-serif;
+    --blueish: #3858F3;
+}
+
+header {
+    height: 80px;
     display: flex;
-    justify-content: center;
     justify-content: space-around;
-    font-size: 13px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-    margin-top: 24px;
-    font-weight: bold;
+    align-items: center;
+    font-size: 18px;
+    flex-direction: row-reverse;
+    border-bottom: 1px solid #EDF2F4;
 }
-.button1{
-    border: solid black 0px;
-    background-color: #3858f5;
-    color: white;
-    font-weight: bold;
-    border-radius: 25px;
-    width: 90px;
-    padding: 8px 5px;
-    font-size: 13px;
+
+.List {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    gap: 14px;
 
 }
-.button2{
-    border: solid black 0px;
+
+.Lists {
+    font-family: var(--font-family-system);
+    color: var(--black);
+    text-decoration: none !important;
+}
+
+
+li {
+    list-style-type: none;
+    margin: auto 8px;
+}
+
+.menutop {
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+
+.menu2 {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    list-style-position: initial;
+    list-style-image: initial;
+    list-style-type: none;
+}
+
+.Lists2 {
+    border: 0px solid;
+    font-family: var(--font-family-system);
+    font-size: 12px;
+    border-radius: 100px;
+    line-height: 1;
+    width: 79px;
+    padding: 8px 5px;
+    background-color: #3858F3;
+    color: #FFFF;
+    font-weight: bold;
+    
+}
+
+.Lists3 {
+    border: 0px solid;
+    font-family: var(--font-family-system);
+    font-size: 12px;
+    font-weight: 500;
+    border-radius: 100px;
+    line-height: 1;
+    width: 79px;
+    padding: 8px 5px;
     background-color: #edf2f4;
-    color: black;
-    border-radius: 25px;
-    width: 90px;
-    padding: 8px 5px;
-    font-size: 13px;
 }
 
-.menu {
-    padding: 8px 9px;
+.line {
+    width: 1px;
+    height: 24px;
+    margin-left: 10px;
+    margin-right: 5px;
+    background: black;
 }
 
-.buttono {
+.buttoniconsearch {
+    cursor: pointer;
+    border: 0px solid;
+    background-color: white;
+}
+
+.button_icon {
+    stroke: black;
+    fill: black;
+}
+
+.charty {
+    display: block!important;
+}
+
+.loginbox {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.button-menu2 {
+    cursor: pointer;
+    border: 0px solid;
+    background-color: #FFFF;
+    padding: 5px;
+    left: 10%;
+    bottom: 0;
+    height: 10%;
+}
+
+.button-menu {
+    cursor: pointer;
+    border: 0px solid;
+    background-color: #FFFF;
+}
+
+.log{
+    display: flex;
+    align-items: center;
+    height: 30px;
+    padding: 0px 20px;
+    background-color: rgb(227, 227, 231);
+    border-radius: 30px;
+}
+.searches{
+    font-size: 20px;
     display: flex;
     flex-direction: row;
-    gap: 16px;
-    border-right: 1px solid black;
-    padding-right: 25px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
-.fafafa {
+.container_header{
     display: flex;
-    margin-top: 7px;
+    align-items: center;
+    justify-content:space-evenly;
+    flex-direction: row;
+    height: 60px;
+    width:80%;
+    font-size: 16px;
+    color:rgb(178, 178, 180);
 }
-.bars {
-    margin-left: 25px;
+.container{
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    flex-direction: column;
+    width: 100%;
+    background-color: white;
+}
+.foto1{
+    display: flex;
+    align-items: flex-end;
+    width: 80%;
+    height: 450px;
+    border: 1px solid;
+}
+.column2{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 30px;
+    width: 80%;
+}
+.foto2{
+    height: 200px;
+    width: 30%;
+    background-color: lightpink;
+    border: 1px solid;
+}
+.column3{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 30px;
+    width: 80%; 
+    padding-bottom: 30px;
+}
+.foto3{
+    height: 200px;
+    width: 30%;
+    background-color: lightpink;
+    border: 1px solid;
+}
+.contianer_content{
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
+}
+.foto1 p{
+    padding: 20px;
+    color: lightpink;
+    font-size: 28px;
+    width: 40%;
+    height: 30%;
 }
